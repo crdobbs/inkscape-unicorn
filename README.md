@@ -1,6 +1,40 @@
-MakerBot Unicorn G-Code Output for Inkscape
+Trinus G-Code Output for Inkscape
 ===========================================
 
+This is a fork from http://github.com/martymcguire/inkscape-unicorn.  It has been customized to fit the Trinus print size and output the gcode compatible with Trinus 3D printer.
+
+Updated by: [Craig Dobbs](http://github.com/crdobbs)
+
+Install
+=======
+
+Copy the contents of `src/` to your Inkscape `extensions/` folder.
+
+Typical locations include:
+
+* OS X - `/Applications/Inkscape.app/Contents/Resources/extensions`
+* Linux - `/usr/share/inkscape/extensions`
+* Windows - `C:\Program Files\Inkscape\share\extensions`
+
+Usage
+=====
+
+* Size and locate your image appropriately:
+	* The Trinus build platform size is 120mm x 125mm.
+	* Set units to **px** in Inkscape after setting document size.
+* Convert all text to paths:
+	* Select all text objects.
+	* Choose **Path | Object to Path**.
+* Save as G-Code:
+	* **File | Save a Copy**.
+	* Select **Trinus Unicorn G-Code (\*.gcode)**.
+	* Save your file.
+* Print!
+	* Home all axes
+	* Install your pen.
+	* Start the Gcode
+
+Original release follows:
 Notice
 ------
 
